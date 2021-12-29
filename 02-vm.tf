@@ -1,18 +1,18 @@
 resource "proxmox_vm_qemu" "proxmox_vm" {
   count             = 1
-  name              = "${vm_name}"
+  name              = var.vm_name
   target_node       = "pve01"
-clone             = "${vm_template}"
+clone             = var.vm_template
 os_type           = "cloud-init"
-  cores             = "${vm_cpu}"
+  cores             = var.vm_cpu
   sockets           = "1"
   cpu               = "host"
-  memory            = "${vm_ram}"
+  memory            = var.vm_ram
   scsihw            = "virtio-scsi-pci"
   bootdisk          = "scsi0"
 disk {
     id              = 0
-    size            = "${vm_disk}"
+    size            = var.vm_disk
     type            = "scsi"
     storage         = "data2"
     storage_type    = "lvm"
