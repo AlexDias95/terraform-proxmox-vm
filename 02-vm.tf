@@ -14,9 +14,7 @@ disk {
     id              = 0
     size            = var.vm_disk
     type            = "scsi"
-    storage         = "data2"
-    storage_type    = "lvm"
-    iothread        = true
+    storage         = "local-lvm"
   }
 network {
     model           = "virtio"
