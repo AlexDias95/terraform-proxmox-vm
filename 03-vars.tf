@@ -14,6 +14,10 @@ variable "vm_name" {
   type = string
 }
 
+variable "vm_template" {
+  type = string
+}
+
 variable "vm_cpu" {
   type = string
 }
