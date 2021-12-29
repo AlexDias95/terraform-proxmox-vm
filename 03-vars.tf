@@ -1,27 +1,27 @@
 variable "proxmox_ip" {
-  type = "string"
+  type = string
 }
 
 variable "proxmox_user" {
-  type = "string"
+  type = string
 }
 
 variable "proxmox_password" {
-  type = "string"
+  type = string
 }
 
 variable "vm_name" {
-  type = "string"
+  type = string
 }
 
 variable "vm_cpu" {
-  type = "string"
+  type = string
 }
 
 variable "vm_ram" {
-  type = "string"
+  type = string
 }
 
 variable "vm_disk" {
-  type = "string"
+  type = string
 }
