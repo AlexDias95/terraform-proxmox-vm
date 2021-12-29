@@ -1,6 +1,7 @@
 resource "proxmox_vm_qemu" "proxmox_vm" {
   count             = 1
   name              = var.vm_name
+  bios              = "ovmf"
   target_node       = "pve01"
   clone             = var.vm_template
   cores             = var.vm_cpu
