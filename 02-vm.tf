@@ -19,13 +19,7 @@ disk {
     iothread        = true
   }
 network {
-    id              = 0
     model           = "virtio"
     bridge          = "vmbr1"
-  }
-lifecycle {
-    ignore_changes  = [
-      network,
-    ]
   }
 }
