@@ -5,7 +5,7 @@ resource "proxmox_vm_qemu" "proxmox_vm" {
   target_node       = "pve01"
   clone             = var.vm-template
   cores             = var.vm-cpu
-  sockets           = "1"
+  sockets           = "2"
   cpu               = "host"
   memory            = var.vm-ram
 disk {
