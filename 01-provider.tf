@@ -12,4 +12,11 @@ provider "proxmox" {
     pm_user = "${var.proxmox-user}@pam"
     pm_password = var.proxmox-password
     pm_tls_insecure = "true"
+    pm_log_enable = true
+    pm_log_file = "terraform-plugin-proxmox.log"
+     pm_debug = true
+    pm_log_levels = {
+      _default = "debug"
+      _capturelog = ""
+    }
 }
