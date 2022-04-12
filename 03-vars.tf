@@ -1,31 +1,31 @@
-variable "proxmox_ip" {
+variable "proxmox-ip" {
   type = string
 }
 
-variable "proxmox_user" {
+variable "proxmox-user" {
   type = string
 }
 
-variable "proxmox_password" {
+variable "proxmox-password" {
   type = string
 }
 
-variable "vm_name" {
+variable "vm-name" {
   type = string
 }
 
-variable "vm_template" {
+variable "vm-template" {
   type = string
 }
 
-variable "vm_cpu" {
+variable "vm-cpu" {
   type = string
 }
 
-variable "vm_ram" {
+variable "vm-ram" {
   type = string
 }
 
-variable "vm_disk" {
+variable "vm-disk" {
   type = string
 }
