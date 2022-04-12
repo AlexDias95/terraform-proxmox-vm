@@ -1,15 +1,15 @@
 resource "proxmox_vm_qemu" "proxmox_vm" {
   count             = 1
-  name              = var.vm_name
+  name              = var.vm-name
   bios              = "ovmf"
   target_node       = "pve01"
-  clone             = var.vm_template
-  cores             = var.vm_cpu
+  clone             = var.vm-template
+  cores             = var.vm-cpu
   sockets           = "1"
   cpu               = "host"
-  memory            = var.vm_ram
+  memory            = var.vm-ram
 disk {
-    size            = var.vm_disk
+    size            = var.vm-disk
     type            = "scsi"
     storage         = "local-lvm"
   }
